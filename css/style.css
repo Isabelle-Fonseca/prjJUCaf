@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 1440px;
+}
+
+.container__logo{
+    
+    background-color: #982417;
+}
+.menu__logo, .menu input{
+    display: none;
+}
+
+.items , .logo{
+    display: flex;
+    justify-content: center;
+}
+
+.menu__item{
+    list-style: none;
+} 
+
+.menu__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 32px;
+    color: #FFF0D1;
+    font-family: Just Me Again Down Here;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu__link:hover{
+    border-bottom: 8px solid #FFF0D1;
+
+}
+
+.banner{
+    background-image: url(../assets/banner_Dsk.png);
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 528px;
+    padding: 10px 0px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.banner__txt{
+    display: flex;
+    width: 589px;
+    height: 237px;
+    padding: 32px 48px 32px 16px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 26px;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.90);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.titulo__banner{
+    font-family: Lekton;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.banner__txt p{
+    font-family: Inria Sans;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.banner__txt span{
+    color: #982417;
+}
+
+.banner__btns{
+    display: flex;
+    
+    
+    align-items: center;
+    gap: 26px;
+}
+
+.btn__1{
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid  #FF9C2D;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    font-family: Inria Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn__2{
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px ;
+    background: #FF9C2D;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    font-family: Inria Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.beneficios{
+    background-color: #FFF0D1;
+    display: flex;
+    height: 360px;
+    padding: 32px;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.t__beneficios{
+    color: #982417;
+    font-family: Lekton;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 16px;
+    border-left: 10px solid #982417;
+}
+
+.beneficios__cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 89px;
+    align-self: stretch;
+}
+
+.card{
+    display: flex;
+    width: 300px;
+    padding: 32px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    background-color: #fff;
+}
+
+.card img{
+    border: 1px solid #FF9C2D;
+}
+
+.subtitulo__card{
+    color: #982417;
+    text-align: center;
+    font-family: Inria Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card p{
+    text-align: center;
+    font-family: Inria Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.depoimentos{
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    gap: 16px;
+    align-self: stretch;
+    background-color:#000;
+}
+
+.t__depoimento{
+    color: #fff;
+    font-family: Lekton;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 16px;
+    border-left: 10px solid #fff;
+}
+
+.franqueado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 128px;
+    align-self: stretch;
+}
+
+.franqueado__txt{
+    color: #fff;
+    padding: 0px 32px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1 0 0;
+}
+
+/* @media screen and (max-width:360px){
+    .menu__logo{
+        display: block;
+        font-size: 2rem;
+    }
+    .items{
+        display: none;
+        flex-direction: column;
+    }
+} */

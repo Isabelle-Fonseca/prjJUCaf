@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>JuCafé</title>
+</head>
+<body>
+    <header class="container__logo">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="logo">
+        </div>
+        <nav class="menu">
+            <label class="menu__logo" for="hamb-menu">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.5 15H52.5V20H7.5V15ZM7.5 27.5H52.5V32.5H7.5V27.5ZM7.5 40H52.5V45H7.5V40Z" fill="#FFF0D1"/>
+                    </svg>
+            </label>
+            <ul class="items">
+                <li class="menu__item"><a class="menu__link" href="#">Benefícios</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Depoimentos</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Franquias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="banner">
+            <div class="banner__txt">
+                <h2 class="titulo__banner"><!--lekton-->
+                    Seja nosso franqueado!
+                </h2>
+                <p> Uma das redes que <span>mais cresce</span> no Brasil</p>
+                <div class="banner__btns">
+                    <button class="btn__1">Saber mais</button>
+                    <button class="btn__2">Registrar interesse</button>
+                </div>
+            </div><!--banner__txt-->
+        </div><!--banner-->
+
+        <section class="beneficios">
+            
+            <h2 class="t__beneficios">Benefícios e Vantagens</h2><!--lekton-->
+            
+            <div class="beneficios__cards">
+                <div class="card">
+                    <img src="./assets/Increase.png">
+                    <h3 class="subtitulo__card">Um mercadoo de expansão!</h3>
+                    <p>Projeção de 15% de crescimento do franchising em 2024</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/Money Bag.png">
+                    <h3 class="subtitulo__card">Ótimos rendimentos</h3>
+                    <p>Mercado de franquia alimentícia fatura em média  52bi</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/Meeting.png">
+                    <h3 class="subtitulo__card">Suporte e Treinamentos</h3>
+                    <p>Todo apoio que o novo franqueado necessita!</p>
+                </div>
+            </div><!--beneficios__cards-->
+        </section><!--beneficios-->
+
+        <section class="depoimentos">
+            <h2 class="t__depoimento">Depoimentos</h2>
+            <div class="franqueado">
+                <div class="franqueado__txt">
+                    <p>“Sempre gostei de café mas nunca pensei em transformar isto em um negócio, mas quando conheci a JuCafé e seu modelo de negócio passei a vislumbrar um futuro promissor atuando com um produto que aprecio. 
+
+                    Estou muito realizada e agradeço a todo apoio da franquia nesta relação construída com diálogo e confiança.”
+                    </p>
+                    <h3 class="franqueado__nome">Kamila Kaffman</h3>
+                    <small>
+                        <sub>
+                            Franqueada - São Paulo SP
+                        </sub>
+                    </small>
+                </div>
+                <div class="franqueado__img">
+                    <img src="./assets/franqueado.png">
+                </div>
+            </div><!--franqueado-->
+        </section><!--depoimentos-->
+
+        <section class="negocio">
+            <h2 class="t__negocio">Modelo de Negócio</h2>
+            <div class="modelos">
+                <div class="modelo__card">
+                    <img src="./assets/modeloBistro_Dsk.png">
+                    <h3 class="t-modelos">Modelo Bistrô</h3>
+                    <div class="txt-modelos">
+                        <ul class="descricao">
+                            <li>a partir de 25 m² </li>
+                            <li>Investimento inicial a partir de 250 mil </li>
+                            <li>Faturamento anual R$ 2 milhões</li>
+                        </ul>
+                    </div>
+                    <img src="./assets/modeloQuiosque_Dsk.png">
+                    <h3 class="t-modelos">Modelo Quiosque</h3>
+                    <div class="txt-modelos">
+                        <ul class="descricao">
+                            <li>a partir de 10 m²</li>
+                            <li>Investimento inicial a partir de 150 mil</li>
+                            <li>Faturamento anual R$ 750 mil</li>
+                        </ul>
+                    </div>
+                </div><!--modelo__card-->
+            </div><!--modelos-->
+        </section><!--negocio-->
+    </main>
+
+    <footer>
+        <div class="contatos">
+            <div class="redes__sociais">
+                <h3 class="txt__contatos">Siga-nos nas redes Sociais</h3>
+            </div>
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.3 2H16.7C19.9 2 22.5 4.6 22.5 7.8V16.2C22.5 17.7383 21.8889 19.2135 20.8012 20.3012C19.7135 21.3889 18.2383 22 16.7 22H8.3C5.1 22 2.5 19.4 2.5 16.2V7.8C2.5 6.26174 3.11107 4.78649 4.19878 3.69878C5.28649 2.61107 6.76174 2 8.3 2ZM8.1 4C7.14522 4 6.22955 4.37928 5.55442 5.05442C4.87928 5.72955 4.5 6.64522 4.5 7.6V16.4C4.5 18.39 6.11 20 8.1 20H16.9C17.8548 20 18.7705 19.6207 19.4456 18.9456C20.1207 18.2705 20.5 17.3548 20.5 16.4V7.6C20.5 5.61 18.89 4 16.9 4H8.1ZM17.75 5.5C18.0815 5.5 18.3995 5.6317 18.6339 5.86612C18.8683 6.10054 19 6.41848 19 6.75C19 7.08152 18.8683 7.39946 18.6339 7.63388C18.3995 7.8683 18.0815 8 17.75 8C17.4185 8 17.1005 7.8683 16.8661 7.63388C16.6317 7.39946 16.5 7.08152 16.5 6.75C16.5 6.41848 16.6317 6.10054 16.8661 5.86612C17.1005 5.6317 17.4185 5.5 17.75 5.5ZM12.5 7C13.8261 7 15.0979 7.52678 16.0355 8.46447C16.9732 9.40215 17.5 10.6739 17.5 12C17.5 13.3261 16.9732 14.5979 16.0355 15.5355C15.0979 16.4732 13.8261 17 12.5 17C11.1739 17 9.90215 16.4732 8.96447 15.5355C8.02678 14.5979 7.5 13.3261 7.5 12C7.5 10.6739 8.02678 9.40215 8.96447 8.46447C9.90215 7.52678 11.1739 7 12.5 7ZM12.5 9C11.7044 9 10.9413 9.31607 10.3787 9.87868C9.81607 10.4413 9.5 11.2044 9.5 12C9.5 12.7956 9.81607 13.5587 10.3787 14.1213C10.9413 14.6839 11.7044 15 12.5 15C13.2956 15 14.0587 14.6839 14.6213 14.1213C15.1839 13.5587 15.5 12.7956 15.5 12C15.5 11.2044 15.1839 10.4413 14.6213 9.87868C14.0587 9.31607 13.2956 9 12.5 9Z" fill="#FFF0D1"/>
+            </svg>
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.5 12.0301C24.5 5.38947 19.124 0 12.5 0C5.876 0 0.5 5.38947 0.5 12.0301C0.5 17.8526 4.628 22.7008 10.1 23.8195V15.6391H7.7V12.0301H10.1V9.02256C10.1 6.70075 11.984 4.81203 14.3 4.81203H17.3V8.42105H14.9C14.24 8.42105 13.7 8.96241 13.7 9.62406V12.0301H17.3V15.6391H13.7V24C19.76 23.3985 24.5 18.2737 24.5 12.0301Z" fill="#FFF0D1"/>
+            </svg>
+            <div class="telefone">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.2652 15.5 20.5196 15.6054 20.7071 15.7929C20.8946 15.9804 21 16.2348 21 16.5V20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21C15.4913 21 11.1673 19.2089 7.97918 16.0208C4.79107 12.8327 3 8.50868 3 4C3 3.73478 3.10536 3.48043 3.29289 3.29289C3.48043 3.10536 3.73478 3 4 3H7.5C7.76522 3 8.01957 3.10536 8.20711 3.29289C8.39464 3.48043 8.5 3.73478 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="#FFF0D1"/>
+                </svg>
+                <h3 class="txt__contatos">Entre em contato 0800 222 0032</h3>
+            </div>
+        </div>
+        <p>Desenvolvido por XPTO Soluções Digitais</p>
+    </footer>
+
+</body>
+</html>
