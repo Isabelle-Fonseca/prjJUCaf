@@ -8,9 +8,28 @@
     max-width: 1440px;
 }
 
+:root {
+    --cor-destaque: #982417;
+    --cor-texto: #FFF0D1;
+    --cor-botao: #FF9C2D;
+}
+
+.titulo__banner,
+.t__beneficios,
+.t__depoimento,
+.t__negocio,
+.t-modelos {
+    font-family: Lekton;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
 .container__logo{
     
-    background-color: #982417;
+    background-color: var(--cor-destaque);
 }
 .menu__logo, .menu input{
     display: none;
@@ -30,7 +49,6 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: #fff;
     padding: 0 32px;
     color: #FFF0D1;
     font-family: Just Me Again Down Here;
@@ -45,6 +63,7 @@
 
 }
 
+/*BANNER*/
 .banner{
     background-image: url(../assets/banner_Dsk.png);
     background-size: cover;
@@ -89,7 +108,7 @@
 }
 
 .banner__txt span{
-    color: #982417;
+    color: var(--cor-destaque);
 }
 
 .banner__btns{
@@ -117,15 +136,18 @@
     justify-content: center;
     align-items: center;
     border-radius: 6px ;
-    background: #FF9C2D;
+    background: var(--cor-botao);
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
     font-family: Inria Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    border: none;
+    
 }
 
+/*BENEFICIOS*/
 .beneficios{
     background-color: #FFF0D1;
     display: flex;
@@ -136,14 +158,9 @@
 }
 
 .t__beneficios{
-    color: #982417;
-    font-family: Lekton;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    color: var(--cor-destaque);
     padding-left: 16px;
-    border-left: 10px solid #982417;
+    border-left: 10px solid var(--cor-destaque);
 }
 
 .beneficios__cards{
@@ -165,11 +182,11 @@
 }
 
 .card img{
-    border: 1px solid #FF9C2D;
+    border: 1px solid var(--cor-botao);
 }
 
 .subtitulo__card{
-    color: #982417;
+    color: var(--cor-destaque);
     text-align: center;
     font-family: Inria Sans;
     font-size: 16px;
@@ -187,6 +204,8 @@
     line-height: normal;
 }
 
+/*DEPOIMENTOS*/
+
 .depoimentos{
     display: flex;
     padding: 32px;
@@ -198,11 +217,6 @@
 
 .t__depoimento{
     color: #fff;
-    font-family: Lekton;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     padding-left: 16px;
     border-left: 10px solid #fff;
 }
@@ -216,21 +230,186 @@
 }
 
 .franqueado__txt{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    justify-content: center;
     color: #fff;
     padding: 0px 32px;
-    justify-content: flex-end;
-    align-items: flex-start;
     gap: 16px;
-    flex: 1 0 0;
 }
 
-/* @media screen and (max-width:360px){
+.franqueado__txt p{
+    font-family: Inria Sans;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.franqueado__nome{
+    font-family: Lekton;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.small{
+    font-family: Inria Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.franqueado__img{
+    padding: 32px;
+    border: 1px solid #fff;
+}
+
+/*NEGOCIO*/
+.negocio{
+
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.t__negocio{
+    color: var(--cor-destaque);
+    border-left: 10px solid var(--cor-destaque);
+    padding-left: 16px;
+    
+}
+
+.modelos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    align-self: stretch;
+}
+
+
+.t-modelos{
+    background-color: var(--cor-destaque);
+    padding: 16px 0px;
+    justify-content: center;
+    text-align: center;
+    align-self: stretch;
+    margin: 0;
+    color: #fff;
+   
+}
+
+.txt-modelos{
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+.descricao{
+    padding-left: 16px;
+    font-family: Inria Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style-type: square;
+}
+
+.descricao li{
+    margin-bottom: 16px;
+    
+}
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-destaque);
+    height: 128px;
+    padding: 10px;
+    gap: 32px;
+
+}
+
+.contatos{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    gap: 128px;
+   
+}
+
+.redes__sociais, .telefone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.txt__contatos{
+    color: #FFF0D1;
+    font-family: Just Me Again Down Here;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.frase{
+    color: #FFF0D1;
+    font-family: Just Me Again Down Here;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+@media screen and (max-width:375px){
+    .container__logo{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0 16px;
+        gap: 64px;
+
+    }
+
+    .menu{
+        display: flex;
+        align-items: center;
+    }
     .menu__logo{
         display: block;
         font-size: 2rem;
+       
+    }
+    .logo{
+
     }
     .items{
         display: none;
         flex-direction: column;
     }
-} */
+
+    
+    .banner__txt{
+        display: flex;
+        height: 237px;
+        padding: 0px 16px;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 8px;
+        flex-shrink: 0;
+        align-self: stretch;
+    
+    }
+}
