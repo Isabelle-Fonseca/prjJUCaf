@@ -3,9 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
 
 *{
+    
     margin: 0;
     padding: 0;
-    max-width: 1440px;
+    /* max-width: 1440px; */
 }
 
 :root {
@@ -85,7 +86,6 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 26px;
-    flex-shrink: 0;
     background: rgba(255, 255, 255, 0.90);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
@@ -151,7 +151,6 @@
 .beneficios{
     background-color: #FFF0D1;
     display: flex;
-    height: 360px;
     padding: 32px;
     flex-direction: column;
     gap: 16px;
@@ -275,7 +274,7 @@
     padding: 32px;
     flex-direction: column;
     gap: 16px;
-    align-self: stretch;
+    
 }
 
 .t__negocio{
@@ -331,7 +330,7 @@ footer{
     display: flex;
     flex-direction: column;
     background-color: var(--cor-destaque);
-    height: 128px;
+    /* height: 128px; */
     padding: 10px;
     gap: 32px;
 
@@ -372,44 +371,155 @@ footer{
     text-align: center;
 }
 
-@media screen and (max-width:375px){
+
+/*RESPONSIVO*/
+@media screen and (max-width:360px){
+   
     .container__logo{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         padding: 0 16px;
         gap: 64px;
-
+        height: 90px;
     }
 
     .menu{
         display: flex;
         align-items: center;
     }
+    .menu__link{
+        border-top: 1px solid rgb(200, 200, 250);
+        width: 100vw;
+        padding: 0;
+        min-width: 200px;
+    }
     .menu__logo{
-        display: block;
-        font-size: 2rem;
-       
+        display: flex;
+        align-items: center;
+        justify-content: center;      
     }
-    .logo{
-
-    }
+    
     .items{
         display: none;
         flex-direction: column;
     }
 
+    /*BANNER*/
+    .banner{
+        background-size: auto 63%;
+        background-repeat: repeat-y;
+        background-position: top center;
+        padding: 0;     
+        display: flex;     
+        height: 528px;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+    }
     
     .banner__txt{
-        display: flex;
+        background-color: #fff;
         height: 237px;
         padding: 0px 16px;
         flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
+        /* word-wrap: break-word; */
+        align-items: center;
         gap: 8px;
         flex-shrink: 0;
         align-self: stretch;
+        width: 360px;
+        justify-content: center;
+        box-shadow: none;
     
     }
+
+    .titulo__banner{
+        max-width: 300px;       
+        text-align: right;     
+        font-size: 36px;
+        line-height: 40px;
+
+    }
+    .banner__txt p{
+        max-width: 300px;
+        text-align: right;
+        font-size: 20px; 
+    }
+
+    /*BENEFICIOS*/
+    .t__beneficios{
+        padding-left: 0;
+        border-left: none;
+        text-align: center;
+        font-size: 24px;
+    }
+    .beneficios__cards{
+        flex-direction: column;
+    }
+    .card{
+        padding: 33px 0;
+    }
+    .card p{
+        max-width: 268px;
+    }
+
+    /*DEPOIMENTOS*/
+    .t__depoimento{
+        padding-left: 0;
+        border-left: none;
+        text-align: center;
+        font-size: 24px;
+    }
+    .franqueado__img{
+        display: none;
+    }
+
+    /*NEGOCIO*/
+    .negocio{
+        padding: 16px 0;
+    }
+    .t__negocio{
+        padding-left: 0;
+        border-left: none;
+        text-align: center;
+        font-size: 24px;
+    }
+    .modelos{
+        flex-direction: column;
+        width: 360px;
+
+        
+    }
+    .modelo__card{
+        justify-content: center;
+        width: 328px;
+    }
+    .img__bistro{
+        content: url(../assets/modeloBistro_Cel.png);/*utilizei para trocar de imagem*/
+    }
+    
+    .img__quiosque{
+        content: url(../assets/modeloQuiosque_Cel.png);
+    }
+
+    /*FOOTER*/
+    footer{
+        justify-content: center ;
+        align-items: center;
+        padding: 10px;
+        gap: 32px;
+    }
+    .contatos{
+        flex-direction: column;
+        gap:16px
+    }
+    .redes__sociais , .telefone{
+        font-size: 20px;
+        gap:8px;
+    }
+    .frase{
+        font-size: 16px;
+    }
+
 }
